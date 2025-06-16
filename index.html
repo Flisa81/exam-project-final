@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Felicia’s Needle & Thread</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-wrapper">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo/logo.png" alt="Felicia’s Needle & Thread Logo" class="logo"/>
+        <span class="site-title">Felicia’s Needle & Thread</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <span id="user-greeting" style="margin-left: auto;"></span>
+        <a href="account/login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display: none;">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="intro">
+    <h1>Welcome to Felicia’s Needle & Thread</h1>
+    <p>Discover the joy of handmade craftsmanship. Browse our latest creations, share your own, or just get inspired.</p>
+    <a href="post/create.html" class="cta-button">Start a Post</a>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel">
+    <button class="carousel-btn prev">‹</button>
+    <div class="carousel-window">
+      <div class="carousel-slides">
+        <a class="carousel-slide" href="post/index.html?id=1">
+          <img src="assets/carousel/carousel1.jpg" alt="Featured 1">
+        </a>
+        <a class="carousel-slide" href="post/index.html?id=3">
+          <img src="assets/carousel/carousel3.jpg" alt="Featured 2">
+        </a>
+        <a class="carousel-slide" href="post/index.html?id=5">
+          <img src="assets/carousel/carousel5.jpg" alt="Featured 3">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-btn next">›</button>
+  </section>
+
+  <!-- Blog Post Grid -->
+ <section class="blog-feed">
+  <h2>Latest Posts</h2>
+  <div class="post-grid">
+    <a href="https://imgur.com/3dPPZNu" class="post-card" target="_blank">
+      <img src="assets/blog/handmade.jpg" alt="Handmade Joy" />
+      <h3>Handmade Joy</h3>
+    </a>
+    <a href="https://imgur.com/ioBYGCu" class="post-card" target="_blank">
+      <img src="assets/blog/thread.jpg" alt="Thread Talk" />
+      <h3>Thread Talk</h3>
+    </a>
+    <a href="https://imgur.com/Uzn8cNY" class="post-card" target="_blank">
+      <img src="assets/blog/sewing-machine-closeup.jpg" alt="Machine Close-Up" />
+      <h3>Threading the Needle</h3>
+    </a>
+    <a href="https://imgur.com/igxY1Hm" class="post-card" target="_blank">
+      <img src="assets/blog/clothing.jpg" alt="Colorful Fabrics" />
+      <h3>Colorful Fabrics</h3>
+    </a>
+    <a href="https://imgur.com/kDEsiOg" class="post-card" target="_blank">
+      <img src="assets/blog/sewing-machine-closeup.jpg" alt="Spools and Needles" />
+      <h3>Spools and Needles</h3>
+    </a>
+    <a href="https://imgur.com/ROfvfTA" class="post-card" target="_blank">
+      <img src="assets/blog/cottonbro.jpg" alt="Sewing Tools Close-up" />
+      <h3>Sewing Tools Close-up</h3>
+    </a>
+    <a href="https://imgur.com/wamD4wa" class="post-card" target="_blank">
+      <img src="assets/blog/detail.jpg" alt="Fabric and Scissors" />
+      <h3>Fabric and Scissors</h3>
+    </a>
+    <a href="https://imgur.com/Ml6ryJy" class="post-card" target="_blank">
+      <img src="assets/blog/fabric.jpg" alt="Modern Sewing Room" />
+      <h3>Modern Sewing Room</h3>
+    </a>
+    <a href="https://imgur.com/Ymp0DI2" class="post-card" target="_blank">
+      <img src="assets/blog/needle-thread.jpg" alt="Needle and Thread" />
+      <h3>Needle and Thread</h3>
+    </a>
+    <a href="https://imgur.com/3SIb5xJ" class="post-card" target="_blank">
+      <img src="assets/blog/sweing-room.jpg" alt="Craft Project in Progress" />
+      <h3>Craft Project</h3>
+    </a>
+    <a href="https://imgur.com/caPFSJz" class="post-card" target="_blank">
+      <img src="assets/blog/tailor-1.jpg" alt="Sewing Accessories" />
+      <h3>Sewing Accessories</h3>
+    </a>
+    <a href="https://imgur.com/tFgXAeG" class="post-card" target="_blank">
+      <img src="assets/blog/tailor-2.jpg" alt="Handmade Garments" />
+      <h3>Handmade Garments</h3>
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Felicia’s Needle & Thread | Handmade with love & stitches</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/feed.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/auth-ui.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

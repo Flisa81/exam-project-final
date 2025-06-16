@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Post | Felicia’s Needle & Thread</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #media-preview {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 10px;
+      display: none;
+    }
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .update, .delete {
+      background-color: #8e4a57;
+      color: white;
+      padding: 0.7rem 1.4rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .delete {
+      background-color: #b34747;
+    }
+    .message {
+      color: red;
+      margin-top: 0.5rem;
+    }
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-wrapper">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo/logo.png" alt="Felicia’s Needle & Thread Logo" class="logo" />
+        <span class="site-title">Felicia’s Needle & Thread</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <span id="user-greeting" style="margin-left: auto;"></span>
+        <a href="../account/login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display: none;">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Edit Post Form -->
+  <main>
+    <h2>Edit Blog Post</h2>
+
+    <form id="edit-post-form">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="body">Body</label>
+      <textarea id="body" name="body" rows="6" required></textarea>
+
+      <label for="media">Image URL</label>
+      <input type="url" id="media" name="media" placeholder="https://example.com/image.jpg" />
+
+      <label for="media-select">Or select an image</label>
+      <select id="media-select">
+        <option value="">-- Select an image --</option>
+        <option value="https://i.imgur.com/3dPPZNu.jpeg">Fabric swatches</option>
+        <option value="https://i.imgur.com/ioBYGCu.jpeg">Thread collection</option>
+        <option value="https://i.imgur.com/Uzn8cNY.jpeg">Vintage sewing machine</option>
+        <option value="https://i.imgur.com/igxY1Hm.jpeg">Colorful fabrics</option>
+        <option value="https://i.imgur.com/kDEsiOg.jpeg">Spools and needles</option>
+        <option value="https://i.imgur.com/ROfvfTA.jpeg">Sewing tools close-up</option>
+        <option value="https://i.imgur.com/wamD4wa.jpeg">Fabric and scissors</option>
+        <option value="https://i.imgur.com/Ml6ryJy.jpeg">Modern sewing room</option>
+        <option value="https://i.imgur.com/Ymp0DI2.jpeg">Needle and thread</option>
+        <option value="https://i.imgur.com/3SIb5xJ.jpeg">Craft project in progress</option>
+        <option value="https://i.imgur.com/caPFSJz.jpeg">Sewing accessories</option>
+        <option value="https://i.imgur.com/tFgXAeG.jpeg">Handmade garments</option>
+        <option value="https://i.imgur.com/Nf7zcrj.jpeg">Seamstress workspace</option>
+      </select>
+
+      <img id="media-preview" src="" alt="Media Preview" />
+
+      <p class="message" id="form-message"></p>
+
+      <div class="buttons">
+        <button type="submit" class="update">Update Post</button>
+        <button type="button" id="delete-post" class="delete">Delete Post</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Felicia’s Needle & Thread | Handmade with love & stitches</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="../js/edit.js"></script>
+  <script src="../js/auth-ui.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>
+

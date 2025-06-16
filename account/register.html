@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Felicia’s Needle & Thread</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-wrapper">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo/logo.png" alt="Felicia’s Needle & Thread Logo" class="logo" />
+        <span class="site-title">Felicia’s Needle & Thread</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Register Form -->
+  <main class="form-page register-page">
+    <h2>Create an Account</h2>
+
+    <form id="register-form">
+      <label for="name">Username</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" required />
+
+      <p id="message" style="color: red; margin-top: 0.5rem;"></p>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in here</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Felicia’s Needle & Thread | Handmade with love & stitches</p>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>
